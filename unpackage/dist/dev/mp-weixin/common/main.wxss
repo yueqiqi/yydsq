@@ -1,0 +1,12 @@
+
+.bg{
+	background: #f3f4f6;
+}
+.bg-blue{
+	background: #2979ff;
+}
+.font-main{
+	font-size: 32rpx;
+	color: #303133;
+}
+
