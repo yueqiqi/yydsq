@@ -1,18 +1,19 @@
 {
   "pages": [
+    "pages/mine/index",
     "pages/index/index",
-    "pages/mine/index"
+    "pages/mine/info"
   ],
   "subPackages": [],
   "window": {
     "navigationBarTextStyle": "white",
     "navigationBarTitleText": "迎扬家具",
-    "navigationBarBackgroundColor": "#2979ff",
+    "navigationBarBackgroundColor": "#5ce9d4",
     "backgroundColor": "#FFFFFF"
   },
   "tabBar": {
-    "color": "#303133",
-    "selectedColor": "#2979ff",
+    "color": "#999999",
+    "selectedColor": "#5ce9d4",
     "list": [
       {
         "pagePath": "pages/index/index",
@@ -21,7 +22,7 @@
         "text": "商铺首页"
       },
       {
-        "pagePath": "pages/index/index",
+        "pagePath": "pages/mine/index",
         "iconPath": "static/tabbar/mine1.png",
         "selectedIconPath": "static/tabbar/mine2.png",
         "text": "个人中心"
