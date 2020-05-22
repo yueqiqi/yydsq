@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/mine/index",
     "pages/index/index",
-    "pages/mine/info"
+    "pages/mine/index",
+    "pages/mine/info",
+    "pages/loading/index"
   ],
   "subPackages": [],
   "window": {
@@ -29,5 +30,7 @@
       }
     ]
   },
-  "usingComponents": {}
+  "usingComponents": {
+    "w-loading": "/components/loading/w-loading"
+  }
 }

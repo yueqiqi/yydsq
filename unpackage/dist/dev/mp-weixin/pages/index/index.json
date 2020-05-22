@@ -1,6 +1,10 @@
 {
   "navigationBarTitleText": "首页",
   "usingComponents": {
-    "uni-link": "/components/uni-link/uni-link"
+    "bw-swiper": "/components/swiper/swiper",
+    "grid-swiper": "/components/grid-swiper/index",
+    "tab": "/components/tabs/index",
+    "top-img": "/components/topImg/index",
+    "goods-swiper": "/components/swiper-goods/index"
   }
 }

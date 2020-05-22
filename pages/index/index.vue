@@ -1,28 +1,90 @@
 <template>
 	<view class="container">
-		<view class="intro">本项目已包含uni ui组件，无需import和注册，可直接使用。在代码区键入字母u，即可通过代码助手列出所有可用组件。光标置于组件名称处按F1，即可查看组件文档。</view>
-		<text class="intro">详见：</text>
-		<uni-link :href="href" :text="href"></uni-link>
+		<view><bw-swiper :swiperList="swiperList" style="width:100%"></bw-swiper></view>
+		<grid-swiper :list="grid" @press="onPress"></grid-swiper>
+		<view><top-img :list="topImg"></top-img></view>
+		<view class=""><goodsSwiper :datas="detail" :config="config" @change="swiperChange" @tapFun="tapFun"></goodsSwiper></view>
+		<view>
+			<tab :tabList="tabList" :tabCur.sync="TabCur" textFlex @change="tabChange" tab-class="text-center text-black bg-white" select-class="text-orange"></tab>
+			<swiper
+				:current="TabCur"
+				class="swiper"
+				duration="300"
+				:circular="true"
+				indicator-color="rgba(255,255,255,0)"
+				indicator-active-color="rgba(255,255,255,0)"
+				@change="swiperChange"
+			>
+				<swiper-item v-for="(item, index) in tabList3" :key="index">
+					<div class="bg-white padding margin text-center text-black">{{ item.name }}</div>
+				</swiper-item>
+			</swiper>
+		</view>
 	</view>
 </template>
 
 <script>
-	export default {
-		data() {
-			return {
-				href: 'https://uniapp.dcloud.io/component/README?id=uniui'
+import test from '@/untils/test.js';
+import bwSwiper from '@/components/swiper/swiper.vue';
+import tab from '@/components/tabs/index.vue';
+import gridSwiper from '@/components/grid-swiper/index.vue';
+import topImg from '@/components/topImg/index.vue';
+import goodsSwiper from '@/components/swiper-goods/index.vue';
+export default {
+	components: {
+		bwSwiper,
+		gridSwiper,
+		tab,
+		topImg,
+		goodsSwiper
+	},
+	data() {
+		return {
+			swiperList: [],
+			grid: [], //金刚区
+			tabList: [{ name: '电视墙' }, { name: '隔断柜' }], //选项卡
+			TabCur: 0,
+			topImg: [],
+			detail: [],
+			config: {
+				more: true,
+				autoplay: false,
+				multiple: 3,
+				shadow: true
 			}
+		};
+	},
+	methods: {
+		tabChange(index) {
+			this.TabCur = index;
 		},
-		methods: {
-
+		swiperChange(e) {
+			let { current } = e.target;
+			this.TabCur = current;
+		},
+		onPress(val) {
+			console.log(val);
 		}
+	},
+	onLoad() {
+		this.swiperList = test.banner;
+		test.grid.map(item => {
+			item.icon = item.img;
+			item.title = item.text;
+		});
+		this.grid = test.grid;
+		this.topImg = test.topImg;
+		this.detail = test.details;
 	}
+};
 </script>
 
 <style>
-	.container {
-		padding: 20px;
-		font-size: 14px;
-		line-height: 24px;
-	}
+.container {
+	padding-top: 30upx;
+	background: #ffffff;
+}
+.text-center {
+	text-align: center;
+}
 </style>

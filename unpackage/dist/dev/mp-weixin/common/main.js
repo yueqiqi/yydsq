@@ -13,6 +13,11 @@ var _index = _interopRequireDefault(__webpack_require__(/*! untils/index.js */ 1
 _vue.default.prototype.$global = _index.default;
 _vue.default.config.productionTip = false;
 
+//全局注入w-loading组件as
+var wLoading = function wLoading() {__webpack_require__.e(/*! require.ensure | components/loading/w-loading */ "components/loading/w-loading").then((function () {return resolve(__webpack_require__(/*! @/components/loading/w-loading.vue */ 45));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
+_vue.default.component('w-loading', wLoading);
+
+
 _App.default.mpType = 'app';
 
 var app = new _vue.default(_objectSpread({},

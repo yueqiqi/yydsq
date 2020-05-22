@@ -20,7 +20,7 @@
 		</view>
 
 		<view class="center-list">
-			<view class="center-list-item border-bottom">
+			<view class="center-list-item border-bottom" @click="fav">
 				<text class="list-icon">&#xe606;</text>
 				<text class="list-text">我的收藏</text>
 				<text class="navigat-arrow">&#xe600;</text>
@@ -54,6 +54,11 @@ export default {
 		};
 	},
 	methods: {
+		fav(){
+			uni.navigateTo({
+				url:'/pages/loading/index'
+			})
+		},
 		login(){
 			let that=this
 			uni.getUserInfo({
