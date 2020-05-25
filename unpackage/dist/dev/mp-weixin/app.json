@@ -32,5 +32,6 @@
   },
   "usingComponents": {
     "w-loading": "/components/loading/w-loading"
-  }
+  },
+  "sitemapLocation": "sitemap51.json"
 }

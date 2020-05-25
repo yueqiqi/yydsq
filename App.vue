@@ -22,7 +22,7 @@ export default {
 		font-family: texticons;
 		font-weight: normal;
 		font-style: normal;
-		src: url('https://at.alicdn.com/t/font_1827932_2zb34bpi6xk.ttf') format('truetype')
+		src: url('https://at.alicdn.com/t/font_1827932_2ohvbntfb9b.ttf') format('truetype')
 	}
 	.flex{
 		display: flex;

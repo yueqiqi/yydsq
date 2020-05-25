@@ -30,9 +30,14 @@
 				<text class="list-text">联系商家</text>
 				<text class="navigat-arrow">&#xe600;</text>
 			</view>
-			<view class="center-list-item ">
+			<view class="center-list-item border-bottom">
 				<text class="list-icon" style="font-size: 44upx;">&#xe62c;</text>
 				<text class="list-text">关于我们</text>
+				<text class="navigat-arrow">&#xe600;</text>
+			</view>
+			<view class="center-list-item ">
+				<text class="list-icon" style="font-size:40upx">&#xe60b;</text>
+				<text class="list-text">联系开发者</text>
 				<text class="navigat-arrow">&#xe600;</text>
 			</view>
 		</view>

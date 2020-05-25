@@ -5,6 +5,7 @@
     "grid-swiper": "/components/grid-swiper/index",
     "tab": "/components/tabs/index",
     "top-img": "/components/topImg/index",
-    "goods-swiper": "/components/swiper-goods/index"
+    "goods-swiper": "/components/swiper-goods/index",
+    "title": "/components/title/index"
   }
 }
