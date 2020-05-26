@@ -1,8 +1,6 @@
 <template>
 	<view class="container">
-		<view>
-		</view>
-		<view><bw-swiper :swiperList="swiperList"></bw-swiper></view>
+		<view style="margin-bottom: 25upx;"><bw-swiper :swiperList="swiperList"></bw-swiper></view>
 		<grid-swiper :list="grid" @press="onPress"></grid-swiper>
 		<title title='爆款推荐' :showMore='false' line='linear-gradient(45deg,rgba(218,25,22,1) 0%,rgba(241,82,51,1) 100%)'></title>
 		<view><top-img :list="topImg"></top-img></view>
@@ -121,7 +119,7 @@ export default {
 
 <style>
 .container {
-	padding-top: 30upx;
+	padding-top: 17upx;
 	background: #ffffff;
 }
 .text-center {

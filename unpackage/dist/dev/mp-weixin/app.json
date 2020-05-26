@@ -3,7 +3,8 @@
     "pages/index/index",
     "pages/mine/index",
     "pages/mine/info",
-    "pages/loading/index"
+    "pages/loading/index",
+    "pages/details/index"
   ],
   "subPackages": [],
   "window": {
@@ -32,6 +33,5 @@
   },
   "usingComponents": {
     "w-loading": "/components/loading/w-loading"
-  },
-  "sitemapLocation": "sitemap51.json"
+  }
 }

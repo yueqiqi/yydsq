@@ -166,8 +166,6 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
-
-
 var _test = _interopRequireDefault(__webpack_require__(/*! @/untils/test.js */ 18));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };} //
 //
 //
@@ -197,13 +195,13 @@ var _test = _interopRequireDefault(__webpack_require__(/*! @/untils/test.js */ 1
 //
 //
 //
-//
-//
-var bwSwiper = function bwSwiper() {__webpack_require__.e(/*! require.ensure | components/swiper/swiper */ "components/swiper/swiper").then((function () {return resolve(__webpack_require__(/*! @/components/swiper/swiper.vue */ 50));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var tab = function tab() {__webpack_require__.e(/*! require.ensure | components/tabs/index */ "components/tabs/index").then((function () {return resolve(__webpack_require__(/*! @/components/tabs/index.vue */ 57));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var gridSwiper = function gridSwiper() {Promise.all(/*! require.ensure | components/grid-swiper/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/grid-swiper/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/grid-swiper/index.vue */ 64));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var topImg = function topImg() {__webpack_require__.e(/*! require.ensure | components/topImg/index */ "components/topImg/index").then((function () {return resolve(__webpack_require__(/*! @/components/topImg/index.vue */ 72));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var goodsSwiper = function goodsSwiper() {__webpack_require__.e(/*! require.ensure | components/swiper-goods/index */ "components/swiper-goods/index").then((function () {return resolve(__webpack_require__(/*! @/components/swiper-goods/index.vue */ 79));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var title = function title() {__webpack_require__.e(/*! require.ensure | components/title/index */ "components/title/index").then((function () {return resolve(__webpack_require__(/*! @/components/title/index.vue */ 113));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { bwSwiper: bwSwiper, gridSwiper: gridSwiper, tab: tab, topImg: topImg, goodsSwiper: goodsSwiper, title: title }, data: function data() {return { listHeight: 0, //内部的高度
+var bwSwiper = function bwSwiper() {__webpack_require__.e(/*! require.ensure | components/swiper/swiper */ "components/swiper/swiper").then((function () {return resolve(__webpack_require__(/*! @/components/swiper/swiper.vue */ 58));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var tab = function tab() {__webpack_require__.e(/*! require.ensure | components/tabs/index */ "components/tabs/index").then((function () {return resolve(__webpack_require__(/*! @/components/tabs/index.vue */ 65));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var gridSwiper = function gridSwiper() {Promise.all(/*! require.ensure | components/grid-swiper/index */[__webpack_require__.e("common/vendor"), __webpack_require__.e("components/grid-swiper/index")]).then((function () {return resolve(__webpack_require__(/*! @/components/grid-swiper/index.vue */ 72));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var topImg = function topImg() {__webpack_require__.e(/*! require.ensure | components/topImg/index */ "components/topImg/index").then((function () {return resolve(__webpack_require__(/*! @/components/topImg/index.vue */ 80));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var goodsSwiper = function goodsSwiper() {__webpack_require__.e(/*! require.ensure | components/swiper-goods/index */ "components/swiper-goods/index").then((function () {return resolve(__webpack_require__(/*! @/components/swiper-goods/index.vue */ 87));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var title = function title() {__webpack_require__.e(/*! require.ensure | components/title/index */ "components/title/index").then((function () {return resolve(__webpack_require__(/*! @/components/title/index.vue */ 94));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default = { components: { bwSwiper: bwSwiper, gridSwiper: gridSwiper, tab: tab, topImg: topImg, goodsSwiper: goodsSwiper, title: title }, data: function data() {return { listHeight: 0, //内部的高度
       swiperHeight: 0, //外部的高度
       swiperList: [], grid: [], //金刚区
       tabList: [{ name: '电视墙' }, { name: '隔断柜' }], //选项卡
-      TabCur: 0, topImg: [], detail: [], config: { more: true, autoplay: false, multiple: 3, shadow: true } };}, onShow: function onShow() {var _this = this;
+      TabCur: 0, topImg: [], detail: [], config: { more: true, autoplay: false, multiple: 3, shadow: true } };},
+  onShow: function onShow() {
+    var _this = this;
     setTimeout(function () {
       var list = '.list';
       // console

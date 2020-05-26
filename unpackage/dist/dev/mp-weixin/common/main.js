@@ -14,7 +14,7 @@ _vue.default.prototype.$global = _index.default;
 _vue.default.config.productionTip = false;
 
 //全局注入w-loading组件as
-var wLoading = function wLoading() {__webpack_require__.e(/*! require.ensure | components/loading/w-loading */ "components/loading/w-loading").then((function () {return resolve(__webpack_require__(/*! @/components/loading/w-loading.vue */ 43));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
+var wLoading = function wLoading() {__webpack_require__.e(/*! require.ensure | components/loading/w-loading */ "components/loading/w-loading").then((function () {return resolve(__webpack_require__(/*! @/components/loading/w-loading.vue */ 51));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};
 _vue.default.component('w-loading', wLoading);
 
 

@@ -1,6 +1,6 @@
 
 .container {
-	padding-top: 30rpx;
+	padding-top: 17rpx;
 	background: #ffffff;
 }
 .text-center {

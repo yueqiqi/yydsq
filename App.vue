@@ -22,13 +22,16 @@ export default {
 		font-family: texticons;
 		font-weight: normal;
 		font-style: normal;
-		src: url('https://at.alicdn.com/t/font_1827932_2ohvbntfb9b.ttf') format('truetype')
+		src: url('https://at.alicdn.com/t/font_1827932_fmgewxfva2k.ttf') format('truetype')
 	}
 	.flex{
 		display: flex;
 	}
 	.sp{
 		justify-content: space-between;
+	}
+	.ct{
+		justify-content: center;
 	}
 	.left{
 		justify-content: left;
@@ -46,5 +49,11 @@ page{
 .font-main{
 	font-size: 32upx;
 	color: #303133;
+}
+.font-main{
+	color: #76D4C6!important;
+}
+.bg-white{
+	background-color: #FFFFFF;
 }
 </style>
