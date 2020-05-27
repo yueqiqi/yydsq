@@ -4,7 +4,8 @@
     "pages/mine/index",
     "pages/mine/info",
     "pages/loading/index",
-    "pages/details/index"
+    "pages/details/index",
+    "pages/classfity/index"
   ],
   "subPackages": [],
   "window": {

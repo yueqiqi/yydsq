@@ -28,8 +28,8 @@
       "list": [
         {
           "id": 0,
-          "name": "pages/details/index",
-          "pathName": "pages/details/index",
+          "name": "pages/classfity/index",
+          "pathName": "pages/classfity/index",
           "query": ""
         }
       ]

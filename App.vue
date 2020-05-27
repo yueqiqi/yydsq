@@ -56,4 +56,32 @@ page{
 .bg-white{
 	background-color: #FFFFFF;
 }
+.mt{
+	margin-top: 30upx;
+}
+.pt{
+	padding-top: 30upx;
+}
+.mb{
+	margin-bottom: 30upx;
+}
+.pb{
+	padding-bottom: 30upx;
+}
+.ml{
+	margin-left: 30upx;
+}
+.pl{
+	padding-left: 30upx;
+}
+.mr{
+	margin-right: 30upx;
+}
+.pr{
+	padding-right: 30upx;
+}
+.bt{
+	border-top: 1upx dashed  #D9D9D9;
+	padding-top: 15upx;
+}
 </style>

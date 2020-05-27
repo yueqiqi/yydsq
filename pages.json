@@ -28,6 +28,12 @@
 							"navigationBarTitleText": "详情"
 						}
         }
+        ,{
+            "path" : "pages/classfity/index",
+            "style" : {
+							"navigationBarTitleText": "更多"
+						}
+        }
     ],
 	"tabBar": {
 		"color": "#999999",

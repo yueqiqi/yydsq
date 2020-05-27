@@ -1709,7 +1709,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 
-/***/ 113:
+/***/ 121:
 /*!*****************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/yy/yydsq1/components/address/city.json ***!
   \*****************************************************************************/
@@ -1846,7 +1846,8 @@ var topImg = [{
   type: 2 }];
 
 
-var details = {
+var details = [
+{
   title: "推荐",
   subLable: "超划算",
   list: [
@@ -1873,7 +1874,70 @@ var details = {
   {
     id: '508',
     text: '转角酒柜',
-    img: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-clay/11811ec0-9bfc-11ea-8bd0-2998ac5bbf7e.jpg' }] };
+    img: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-clay/11811ec0-9bfc-11ea-8bd0-2998ac5bbf7e.jpg' }] },
+
+
+
+{
+  title: "热门",
+  subLable: "超划算",
+  list: [
+  {
+    id: '503',
+    text: '欧式系列',
+    img: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-clay/118404f0-9bfc-11ea-b94e-47f67ecf8268.jpg' },
+
+  {
+    id: '508',
+    text: '法式鞋柜',
+    img: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-clay/11811ec0-9bfc-11ea-8bd0-2998ac5bbf7e.jpg' },
+
+  {
+    id: '502',
+    text: '简约现代',
+    img: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-clay/11847a20-9bfc-11ea-b43d-2358b31b6ce6.jpg' },
+
+  {
+    id: '503',
+    text: '鱼缸系列',
+    img: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-clay/118404f0-9bfc-11ea-b94e-47f67ecf8268.jpg' },
+
+  {
+    id: '508',
+    text: '转角酒柜',
+    img: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-clay/11811ec0-9bfc-11ea-8bd0-2998ac5bbf7e.jpg' }] },
+
+
+
+{
+  title: "热门",
+  subLable: "超划算",
+  list: [
+  {
+    id: '503',
+    text: '欧式系列',
+    img: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-clay/118404f0-9bfc-11ea-b94e-47f67ecf8268.jpg' },
+
+  {
+    id: '508',
+    text: '法式鞋柜',
+    img: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-clay/11811ec0-9bfc-11ea-8bd0-2998ac5bbf7e.jpg' },
+
+  {
+    id: '502',
+    text: '简约现代',
+    img: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-clay/11847a20-9bfc-11ea-b43d-2358b31b6ce6.jpg' },
+
+  {
+    id: '503',
+    text: '鱼缸系列',
+    img: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-clay/118404f0-9bfc-11ea-b94e-47f67ecf8268.jpg' },
+
+  {
+    id: '508',
+    text: '转角酒柜',
+    img: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-clay/11811ec0-9bfc-11ea-8bd0-2998ac5bbf7e.jpg' }] }];
+
 
 
 
@@ -1882,7 +1946,21 @@ var info = {
   text: '法式鞋柜',
   title: 'A502',
   img: 'https://vkceyugu.cdn.bspapp.com/VKCEYUGU-clay/11811ec0-9bfc-11ea-8bd0-2998ac5bbf7e.jpg',
-  info: '这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介' };var _default =
+  info: '这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介这里是简介' };
+
+var content = {
+  tel: '15183233274',
+  qq: '1342151423',
+  wx: '15183233274',
+  email: '15183233274@163.com' };
+
+var tabList = [
+{ name: '全部' },
+{ name: '长1米以下' },
+{ name: '长1米' },
+{ name: '长1.1米' },
+{ name: '长1.2米' },
+{ name: '长1.5米' }];var _default =
 
 {
   banner: banner,
@@ -1890,7 +1968,9 @@ var info = {
   grid: grid,
   topImg: topImg,
   details: details,
-  info: info };exports.default = _default;
+  info: info,
+  content: content,
+  tabList: tabList };exports.default = _default;
 
 /***/ }),
 
@@ -7966,7 +8046,7 @@ module.exports = g;
 
 /***/ }),
 
-/***/ 77:
+/***/ 85:
 /*!********************************************************************************!*\
   !*** C:/Users/Administrator/Desktop/yy/yydsq1/node_modules/numeral/numeral.js ***!
   \********************************************************************************/

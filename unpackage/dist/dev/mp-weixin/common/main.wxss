@@ -53,4 +53,32 @@ page{
 .bg-white{
 	background-color: #FFFFFF;
 }
+.mt{
+	margin-top: 30rpx;
+}
+.pt{
+	padding-top: 30rpx;
+}
+.mb{
+	margin-bottom: 30rpx;
+}
+.pb{
+	padding-bottom: 30rpx;
+}
+.ml{
+	margin-left: 30rpx;
+}
+.pl{
+	padding-left: 30rpx;
+}
+.mr{
+	margin-right: 30rpx;
+}
+.pr{
+	padding-right: 30rpx;
+}
+.bt{
+	border-top: 1rpx dashed  #D9D9D9;
+	padding-top: 15rpx;
+}
 

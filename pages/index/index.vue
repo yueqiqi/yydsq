@@ -18,7 +18,9 @@
 			>
 				<swiper-item >
 					<view class="list">
-						<goods-swiper></goods-swiper>
+						<block v-for="(item,index) in detail" :key='index'>
+							<goods-swiper :detail='item'></goods-swiper>
+						</block>
 					</view>
 				</swiper-item>
 			</swiper>
@@ -54,12 +56,6 @@ export default {
 			TabCur: 0,
 			topImg: [],
 			detail: [],
-			config: {
-				more: true,
-				autoplay: false,
-				multiple: 3,
-				shadow: true
-			}
 		};
 	},
 	onShow() {
@@ -112,7 +108,6 @@ export default {
 		this.grid = test.grid;
 		this.topImg = test.topImg;
 		this.detail = test.details;
-		console.log(this.detail)
 	}
 };
 </script>
