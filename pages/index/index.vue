@@ -5,7 +5,9 @@
 		<title title='爆款推荐' :showMore='false' line='linear-gradient(45deg,rgba(218,25,22,1) 0%,rgba(241,82,51,1) 100%)'></title>
 		<view><top-img :list="topImg"></top-img></view>
 		<view style=" margin-bottom:100upx">
+			<view class="stick">
 			<tab :tabList="tabList" :tabCur.sync="TabCur" textFlex @change="tabChange" tab-class="text-center text-black bg-white" select-class="text-orange"></tab>
+			</view>
 			<swiper
 				:current="TabCur"
 				class="swiper"
@@ -16,7 +18,7 @@
 				@change="swiperChange"
 				:style="{ height: swiperHeight+30 + 'px'}"
 			>
-				<swiper-item >
+				<swiper-item v-for="(val, idx) in tabList" :key="idx">
 					<view class="list">
 						<block v-for="(item,index) in detail" :key='index'>
 							<goods-swiper :detail='item'></goods-swiper>
@@ -96,7 +98,9 @@ export default {
 			this.TabCur = current;
 		},
 		onPress(val) {
-			console.log(val);
+			uni.navigateTo({
+				url:'/pages/classfity/index?title='+val.text
+			})
 		}
 	},
 	onLoad() {

@@ -97,6 +97,19 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
+  if (!_vm._isMounted) {
+    _vm.e0 = function($event) {
+      _vm.isShow = true
+    }
+
+    _vm.e1 = function($event) {
+      _vm.isShow = true
+    }
+
+    _vm.e2 = function($event) {
+      _vm.isShow = false
+    }
+  }
 }
 var recyclableRender = false
 var staticRenderFns = []
@@ -130,70 +143,89 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-var _default =
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+var _test = _interopRequireDefault(__webpack_require__(/*! @/untils/test.js */ 18));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}var content = function content() {__webpack_require__.e(/*! require.ensure | components/content/index */ "components/content/index").then((function () {return resolve(__webpack_require__(/*! @/components/content/index.vue */ 132));}).bind(null, __webpack_require__)).catch(__webpack_require__.oe);};var _default =
 {
-  components: {},
+  components: {
+    content: content },
 
   data: function data() {
     return {
       token: '1',
-      isAlert: false,
-      isClear: false,
       avatarUrl: '',
-      userName: '' };
+      userName: '',
+      isShow: false,
+      contents: '' };
 
   },
   methods: {
+    about: function about() {
+      uni.navigateTo({
+        url: '/pages/mine/about' });
+
+    },
+    copy: function copy(val) {
+      uni.setClipboardData({
+        data: val });
+
+    },
+    call: function call(val) {
+      uni.makePhoneCall({
+        phoneNumber: val });
+
+    },
     fav: function fav() {
       uni.navigateTo({
-        url: '/pages/loading/index' });
+        url: '/pages/mine/collect' });
 
     },
     login: function login() {var _this = this;
@@ -212,11 +244,6 @@ var _default =
         } });
 
     },
-    tel: function tel() {
-      uni.makePhoneCall({
-        phoneNumber: '15183233274' });
-
-    },
     info: function info() {
       uni.navigateTo({
         url: '/pages/mine/info' });
@@ -225,6 +252,7 @@ var _default =
 
   onLoad: function onLoad(options) {
     var user = uni.getStorageSync('userInfo') || '';
+    this.contents = _test.default.content;
     this.avatarUrl = user.avatarUrl;
     this.userName = user.nickName;
   } };exports.default = _default;

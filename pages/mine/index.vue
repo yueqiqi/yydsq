@@ -4,7 +4,7 @@
 			<view class="bg" :style="{backgroundImage: 'url('+avatarUrl+')',backgroundSize: '100% 100%;'}">
 				<view class="box">
 					<view class="box-hd">
-						<block v-if="token != ''">
+						<block v-if="userName != ''">
 							<view class="flex" >
 								<view class="avator"><img :src="avatarUrl" /></view>
 								<view class="phone-number">{{ userName }}</view>
@@ -25,43 +25,62 @@
 				<text class="list-text">我的收藏</text>
 				<text class="navigat-arrow">&#xe600;</text>
 			</view>
-			<view class="center-list-item border-bottom" @click="tel">
+			<view class="center-list-item border-bottom" @click="isShow=true">
 				<text class="list-icon">&#xe608;</text>
 				<text class="list-text">联系商家</text>
 				<text class="navigat-arrow">&#xe600;</text>
 			</view>
-			<view class="center-list-item border-bottom">
+			<view class="center-list-item border-bottom" @click="about">
 				<text class="list-icon" style="font-size: 44upx;">&#xe62c;</text>
-				<text class="list-text">关于我们</text>
+				<text class="list-text">关于商家</text>
 				<text class="navigat-arrow">&#xe600;</text>
 			</view>
-			<view class="center-list-item ">
+			<view class="center-list-item " @click="isShow=true">
 				<text class="list-icon" style="font-size:40upx">&#xe60b;</text>
 				<text class="list-text">联系开发者</text>
 				<text class="navigat-arrow">&#xe600;</text>
 			</view>
 		</view>
+		<content :isShow="isShow" :contents="contents" @close='isShow=false' @call='call' @copy='copy'></content>
 		<view class="copy">Clowns Laughing At You 提供技术支持</view>
 	</view>
 </template>
 
 <script>
+	import content from '@/components/content/index.vue';
+	import test from '@/untils/test.js';
 export default {
 	components: {
+		content
 	},
 	data() {
 		return {
 			token: '1',
-			isAlert: false,
-			isClear:false,
 			avatarUrl: '',
-			userName: ''
+			userName: '',
+			isShow:false,
+			contents:'',
 		};
 	},
 	methods: {
+		about(){
+			uni.navigateTo({
+				url:'/pages/mine/about'
+			})
+		},
+		copy(val){
+			uni.setClipboardData({
+				data:val
+			})
+		},
+		call(val){
+			uni.makePhoneCall({
+				phoneNumber:val
+			})
+		},
 		fav(){
 			uni.navigateTo({
-				url:'/pages/loading/index'
+				url:'/pages/mine/collect'
 			})
 		},
 		login(){
@@ -80,11 +99,6 @@ export default {
 					}
 				})
 		},
-		tel(){
-			uni.makePhoneCall({
-				phoneNumber:'15183233274'
-			})
-		},
 		info(){
 			uni.navigateTo({
 				url:'/pages/mine/info'
@@ -93,6 +107,7 @@ export default {
 	},
 	onLoad(options) {
 		let user = uni.getStorageSync('userInfo')||''
+		this.contents = test.content;
 		this.avatarUrl=user.avatarUrl
 		this.userName=user.nickName
 	}

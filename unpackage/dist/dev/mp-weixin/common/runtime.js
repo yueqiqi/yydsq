@@ -104,11 +104,11 @@
 /******/
 /******/
 /******/ 		// mini-css-extract-plugin CSS loading
-/******/ 		var cssChunks = {"components/loading/w-loading":1,"components/grid-swiper/index":1,"components/swiper-goods/index":1,"components/swiper/swiper":1,"components/tabs/index":1,"components/title/index":1,"components/topImg/index":1,"components/address/index":1,"components/pop/index":1,"components/content/index":1,"components/service/index":1};
+/******/ 		var cssChunks = {"components/loading/w-loading":1,"components/grid-swiper/index":1,"components/swiper-goods/index":1,"components/swiper/swiper":1,"components/tabs/index":1,"components/title/index":1,"components/topImg/index":1,"components/content/index":1,"components/address/index":1,"components/pop/index":1,"components/service/index":1,"components/loadMore/index":1};
 /******/ 		if(installedCssChunks[chunkId]) promises.push(installedCssChunks[chunkId]);
 /******/ 		else if(installedCssChunks[chunkId] !== 0 && cssChunks[chunkId]) {
 /******/ 			promises.push(installedCssChunks[chunkId] = new Promise(function(resolve, reject) {
-/******/ 				var href = "" + ({"components/loading/w-loading":"components/loading/w-loading","components/grid-swiper/index":"components/grid-swiper/index","components/swiper-goods/index":"components/swiper-goods/index","components/swiper/swiper":"components/swiper/swiper","components/tabs/index":"components/tabs/index","components/title/index":"components/title/index","components/topImg/index":"components/topImg/index","components/address/index":"components/address/index","components/pop/index":"components/pop/index","components/content/index":"components/content/index","components/service/index":"components/service/index"}[chunkId]||chunkId) + ".wxss";
+/******/ 				var href = "" + ({"components/loading/w-loading":"components/loading/w-loading","components/grid-swiper/index":"components/grid-swiper/index","components/swiper-goods/index":"components/swiper-goods/index","components/swiper/swiper":"components/swiper/swiper","components/tabs/index":"components/tabs/index","components/title/index":"components/title/index","components/topImg/index":"components/topImg/index","components/content/index":"components/content/index","components/address/index":"components/address/index","components/pop/index":"components/pop/index","components/service/index":"components/service/index","components/loadMore/index":"components/loadMore/index"}[chunkId]||chunkId) + ".wxss";
 /******/ 				var fullhref = __webpack_require__.p + href;
 /******/ 				var existingLinkTags = document.getElementsByTagName("link");
 /******/ 				for(var i = 0; i < existingLinkTags.length; i++) {

@@ -13,6 +13,20 @@ export default {
 </script>
 
 <style>
+		/*每个页面公共css */
+		::-webkit-scrollbar {
+		  width: 0;
+		  height: 0;
+		  /* color: transparent; */
+		}
+	.stick{
+		/* #ifndef APP-PLUS-NVUE */
+			position: -webkit-sticky;
+			/* #endif */
+			position: sticky;
+			top: var(--window-top);
+			z-index: 9999;
+	}
 	.icon{
 		color: #303133;
 		font-size: 40upx;

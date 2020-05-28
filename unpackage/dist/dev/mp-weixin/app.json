@@ -5,7 +5,10 @@
     "pages/mine/info",
     "pages/loading/index",
     "pages/details/index",
-    "pages/classfity/index"
+    "pages/classfity/index",
+    "pages/waterfall/index",
+    "pages/mine/about",
+    "pages/mine/collect"
   ],
   "subPackages": [],
   "window": {
@@ -34,5 +37,6 @@
   },
   "usingComponents": {
     "w-loading": "/components/loading/w-loading"
-  }
+  },
+  "sitemapLocation": "sitemap38.json"
 }

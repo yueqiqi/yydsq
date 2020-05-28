@@ -32,6 +32,24 @@
             "path" : "pages/classfity/index",
             "style" : {
 							"navigationBarTitleText": "更多"
+							// "enablePullDownRefresh": true, //设置为true表示当前页面开启下拉刷新
+							// "backgroundTextStyle": "dark" //下拉 loading 的样式，仅支持 dark/light
+						}
+        }
+        ,{
+            "path" : "pages/waterfall/index",
+            "style" : {}
+        }
+        ,{
+            "path" : "pages/mine/about",
+            "style" : {
+							"navigationBarTitleText": "关于商家"
+						}
+        }
+        ,{
+            "path" : "pages/mine/collect",
+            "style" : {
+							"navigationBarTitleText": "我的收藏"
 						}
         }
     ],
